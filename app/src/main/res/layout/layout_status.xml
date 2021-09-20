@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Status_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:padding="4dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/Status_ImageView"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:padding="6dp"
+        android:src="@drawable/user_default" />
+
+    <com.devlomi.circularstatusview.CircularStatusView
+        android:id="@+id/circular_status_view"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        app:portion_color="@color/colorAccent"
+        app:portion_spacing="4dp"
+        app:portion_width="4dp"
+        app:portions_count="8" />
+
+    <TextView
+        android:id="@+id/Status_username"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="Username"
+        android:layout_marginHorizontal="16dp"
+        android:layout_toRightOf="@id/circular_status_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Status_timeStamp"
+        android:textSize="14dp"
+        android:layout_below="@id/Status_username"
+        android:text="12/52/8888 55:22"
+        android:layout_marginHorizontal="16dp"
+        android:layout_toRightOf="@id/circular_status_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</RelativeLayout>

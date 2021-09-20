@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.UserdetailsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/user_default"
+        android:layout_marginTop="56dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/UserDetails_profile_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:civ_border_width="3dp"
+        app:civ_border_color="#11998e"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        app:fabSize="normal"
+        android:id="@+id/UserDetails_profile_pick"
+        android:src="@drawable/ic_camera"
+        android:background="@color/green1"
+        android:layout_marginTop="-15dp"
+        android:layout_below="@id/UserDetails_profile_img"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/UserDetails_userName"
+        android:textColor="@color/grey2"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_below="@id/UserDetails_profile_pick"
+        android:background="@drawable/lightgrey_bg"
+        android:layout_marginHorizontal="16dp"
+        android:hint="user name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/UserDetails_profile_desc"
+        android:paddingVertical="8dp"
+        android:gravity="top"
+        android:maxLines="3"
+        android:textColor="@color/grey2"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/UserDetails_userName"
+        android:background="@drawable/lightgrey_bg"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Hi i am using WhatsApp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <Button
+        android:id="@+id/UserDetails_button"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="Continue"
+        android:elevation="8dp"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="56dp"
+        android:background="@drawable/gradient_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+
+
+
+
+</RelativeLayout>

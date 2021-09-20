@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey0"
+    tools:context=".Views.Profile.ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Profile_toolbar"
+        app:titleTextColor="@color/white"
+        app:title="Profile"
+        android:background="@color/green1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Profile_userImage"
+                    android:src="@drawable/user_default"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/Profile_ImagePickButton"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_camerao"
+                    android:layout_marginTop="-40dp"
+                    android:layout_alignRight="@id/Profile_userImage"
+                    android:layout_below="@id/Profile_userImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:padding="12dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Profile_username"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:text="User Name"
+                    android:layout_gravity="left"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/Profile_ChangeUsername"
+                    app:tint="@color/green1"
+                    android:src="@drawable/ic_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="This is not your User Name or pin . This name will be visible to your WhatsApp contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/green1"
+                    android:text="About and Phone Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:paddingVertical="12dp"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Profile_UserDesc"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="Hi there !! i am using WhatsApp"
+                        android:layout_gravity="left"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:id="@+id/Profile_ChangeUserDesc"
+                        app:tint="@color/green1"
+                        android:src="@drawable/ic_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <View style="@style/Divider" android:layout_marginLeft="24dp"/>
+
+                <TextView
+                    android:id="@+id/Profile_userPhone"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>
