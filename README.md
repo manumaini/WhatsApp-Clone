@@ -11,4 +11,4 @@ Firebase Authentication: For user login and registration.
 CameraX: For Accessing Device's Camera .
 MVP Architecture .
 
-Happy Coding..
+Happy Coding...
